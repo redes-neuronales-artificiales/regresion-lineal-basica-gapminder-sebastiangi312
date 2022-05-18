@@ -111,7 +111,9 @@ def pregunta_04():
     # Importe LinearRegression
     # Importe train_test_split
     # Importe mean_squared_error
-    from sklearn.linear_model import [LinearRegression, train_test_split, mean_squared_error]
+    from sklearn.linear_model import LinearRegression
+    from sklearn.linear_model import train_test_split
+    from sklearn.linear_model import mean_squared_error
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
     df = pd.read_csv('gm_2008_region.csv')
