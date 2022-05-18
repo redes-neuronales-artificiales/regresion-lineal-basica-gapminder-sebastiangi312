@@ -90,7 +90,7 @@ def pregunta_03():
     prediction_space = np.linspace(
         min(X_fertility),
         max(X_fertility),
-    ).reshape(X_fertility.shape[0], X_fertility.shape[1])
+    ).reshape(X_fertility.shape[0], 1)
 
     # Entrene el modelo usando X_fertility y y_life
     reg.fit(X_fertility, y_life)
@@ -112,8 +112,8 @@ def pregunta_04():
     # Importe train_test_split
     # Importe mean_squared_error
     from sklearn.linear_model import LinearRegression
-    from sklearn.linear_model import train_test_split
-    from sklearn.linear_model import mean_squared_error
+    from sklearn.model_selection import train_test_split
+    from sklearn.metrics import mean_squared_error
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
     df = pd.read_csv('gm_2008_region.csv')
