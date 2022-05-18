@@ -27,16 +27,16 @@ def pregunta_01():
     print(X.shape)
 
     # Transforme `y` a un array de numpy usando reshape
-    y_reshaped = y.to_numpy()
+    y_reshaped = y..to_numpy()
 
     # Trasforme `X` a un array de numpy usando reshape
     X_reshaped = X.to_numpy()
 
     # Imprima las nuevas dimensiones de `y`
-    print(y.shape)
+    print(y_reshaped.shape())
 
     # Imprima las nuevas dimensiones de `X`
-    print(X.shape)
+    print(X_reshaped.shape())
 
 
 def pregunta_02():
@@ -111,7 +111,7 @@ def pregunta_04():
     # Importe LinearRegression
     # Importe train_test_split
     # Importe mean_squared_error
-    from sklearn.linear_model import LinearRegression, train_test_split, mean_squared_error
+    from sklearn.linear_model import LinearRegression, Train_test_split, Mean_squared_error
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
     df = pd.read_csv('gm_2008_region.csv')
@@ -124,7 +124,7 @@ def pregunta_04():
 
     # Divida los datos de entrenamiento y prueba. La semilla del generador de números
     # aleatorios es 53. El tamaño de la muestra de entrenamiento es del 80%
-    (X_train, X_test, y_train, y_test,) = train_test_split(
+    (X_train, X_test, y_train, y_test,) = Train_test_split(
         X_fertility,
         y_life,
         test_size=0.8,
@@ -142,5 +142,5 @@ def pregunta_04():
 
     # Compute and print R^2 and RMSE
     print("R^2: {:6.4f}".format(linearRegression.score(X_test, y_test)))
-    rmse = mean_squared_error(y_life, y_pred, squared=False)
+    rmse = Mean_squared_error(y_life, y_pred, squared=False)
     print("Root Mean Squared Error: {:6.4f}".format(rmse))
